@@ -1,6 +1,7 @@
 package code.GameObjects 
 {
 	import code.GameObject;
+	import flash.events.MouseEvent;
 	
 	/**
 	 * ...
@@ -16,7 +17,20 @@ package code.GameObjects
 		
 		public override function init()	{
 			
-			play();
+			if(manager.getObject("hamster") == null)	{
+				manager.initObject(this, "hamster");
+				addEventListener(MouseEvent.MOUSE_OVER, onMouseOver);
+				play();
+			}
+		}
+		
+		public override function onMouseOver(e:MouseEvent)	{
+			
+			if (state == "start")	{
+				
+				state = "run";
+				gotoAndPlay("run");
+			}
 		}
 	}
 

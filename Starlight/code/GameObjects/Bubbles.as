@@ -17,15 +17,15 @@ package code.GameObjects
 		
 		public override function init()	{
 			
+			addEventListener(MouseEvent.CLICK, onClick);
+			
 			if (manager.getObject("bubbles") == null)	{
 				
 				manager.initObject(this, "bubbles");
 				makeButton();
-				
-				addEventListener(MouseEvent.CLICK, onClick);
 			}
 			
-			else 
+			else if (manager.getObject("bubbles").state == "inventory")
 			{
 				hide();
 			}
@@ -44,7 +44,7 @@ package code.GameObjects
 			
 			gui.addObject(new BubblesItem());
 			hide();
-			state = "inventory";
+			manager.getObject("bubbles").state = "inventory"
 		}
 		
 	}
