@@ -6,18 +6,19 @@ package code
 	 */
 	public class GUI extends GameObject 
 	{
-		//	Singleton stuff
-		private static var instance:GUI;
-		private static var initializing:Boolean = false;
-		
 		//	Array of GUIObjects
 		private var objects:Array;
 		
 		public function GUI()	{
 
-			objects = new Array();	
+				objects = new Array();	
 		}
 		
+		public override function init()	{
+			
+			manager.initObject(this, "gui");
+		}
+
 		public function addObject(obj:GameObject)	{
 			
 			var xBuffer:int = 3;
@@ -43,11 +44,6 @@ package code
 			
 		}
 		
-		//	Get the singleton instance of this class
-		public static function getInstance():GUI	{
-			
-			return instance;
-		}
 	}
 
 }
