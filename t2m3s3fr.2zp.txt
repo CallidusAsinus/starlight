@@ -1,0 +1,27 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: unknown <kph8161@GDD-60.main.ad.rit.edu>
+#
+# Not currently on any branch.
+# You are currently rebasing.
+#   (all conflicts fixed: run "git rebase --continue")
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   Starlight/Starlight.as3proj
+#	new file:   Starlight/Starlight.fla
+#	new file:   Starlight/Starlight.swf
+#	new file:   Starlight/code/Document.as
+#	new file:   Starlight/code/GUI.as
+#	new file:   Starlight/code/GUIObject.as
+#	new file:   Starlight/code/GameObject.as
+#	new file:   Starlight/code/GameObjectManager.as
+#	new file:   Starlight/code/GameObjects/Fader.as
+#	new file:   Starlight/code/GameObjects/PlayButton.as
+#	new file:   Starlight/code/GameObjects/TitleScreen.as
+#	new file:   Starlight/code/GameObjects/Window.as
+#
+
