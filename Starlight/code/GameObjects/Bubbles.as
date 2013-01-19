@@ -18,12 +18,25 @@ package code.GameObjects
 		public override function init()	{
 			
 			manager.initObject(this, "bubbles");
+			makeButton();
+			
 			addEventListener(MouseEvent.CLICK, onClick);
 		}
 		
 		public override function onClick(e:MouseEvent)	{
 			
-			//gui.addObject(this);
+			if (state == "start")	{
+				
+				addToInventory();
+			}
+			
+		}
+		
+		private function addToInventory()	{
+			
+			gui.addObject(new BubblesItem());
+			hide();
+			state = "inventory";
 		}
 		
 	}

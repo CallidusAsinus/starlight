@@ -17,6 +17,8 @@ package code	{
 			var gom:GameObjectManager = GameObjectManager.getInstance();
 			gom.setDoc(this);
 			titleScreen.play();
+			
+			GUI.initInstance(gui);
 		}
 		
 	}

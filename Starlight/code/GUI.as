@@ -6,6 +6,9 @@ package code
 	 */
 	public class GUI extends GameObject 
 	{
+		//	Singleton stuff
+		private static var instance:GUI;
+		
 		//	Array of GUIObjects
 		private var objects:Array;
 		
@@ -19,10 +22,10 @@ package code
 			manager.initObject(this, "gui");
 		}
 
-		public function addObject(obj:GameObject)	{
+		public function addObject(obj:GUIObject)	{
 			
 			var xBuffer:int = 3;
-			var yBuffer:int = 3;
+			var yBuffer:int = 0;
 			
 			obj.y = yBuffer;
 			
@@ -36,12 +39,25 @@ package code
 			
 			obj.x = xDisp;
 			
-			this.addChild(obj);
+			objects.push(obj);
+			instance.addChild(obj);
+			
+			trace("added " + obj);
 		}
 		
 		public function removeObject(obj:GUIObject)	{
 			
 			
+		}
+		
+		public static function initInstance(gui:GUI)	{
+			
+			instance = gui;
+		}
+		
+		public static function getInstance():GUI	{
+			
+			return instance;
 		}
 		
 	}
