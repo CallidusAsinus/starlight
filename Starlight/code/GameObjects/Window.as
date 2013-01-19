@@ -14,9 +14,10 @@ package code.GameObjects
 			
 		}
 		
-		public function init()	{
+		public override function init()	{
 			
 			manager.initObject(this, "window");
+			makeButton();
 		}
 		
 	}
