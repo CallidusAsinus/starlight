@@ -35,6 +35,11 @@ package code	{
 			trace(this + " onMouseOver not overridden");
 		}
 		
+		public function onMouseOut(e:MouseEvent)	{
+			
+			
+		}
+		
 		//	Functionality functions
 		public function makeButton()	{
 			
