@@ -10,6 +10,7 @@ package code	{
 	public class GameObject extends MovieClip	{
 	
 		protected var manager:GameObjectManager;
+		protected var gui:GUI;
 		public var state:String = "start";
 		
 		public function GameObject()	{
@@ -17,6 +18,7 @@ package code	{
 			super();
 			this.stop();
 			manager = GameObjectManager.getInstance();
+			gui = GUI.getInstance();
 		}
 		
 		public function init()	{

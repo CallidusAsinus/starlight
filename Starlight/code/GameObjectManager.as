@@ -59,11 +59,6 @@ package code	{
 			getObject("blocker").playAnimation("down");
 		}
 		
-		public function getGui():GUI	{
-			
-			return objects["gui"];
-		}
-		
 		//	Get the singleton instance of this class
 		public static function getInstance():GameObjectManager	{
 			if(!instance)	{

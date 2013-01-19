@@ -19,11 +19,12 @@ package code.GameObjects
 			
 			manager.initObject(this, "bubbles");
 			addEventListener(MouseEvent.CLICK, onClick);
+			trace("gui: " + gui);
 		}
 		
 		public override function onClick(e:MouseEvent)	{
 			
-			manager.getGui.addObject(this);
+			gui.addObject(this);
 		}
 		
 	}
