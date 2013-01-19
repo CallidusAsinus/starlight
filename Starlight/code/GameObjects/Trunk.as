@@ -21,7 +21,6 @@ package code.GameObjects
 			makeButton();
 			
 			addEventListener(MouseEvent.CLICK, onClick);
-			addEventListener(MouseEvent.MOUSE_OVER, onMouseOver);
 		}
 		
 		public override function onClick(e:MouseEvent)	{
