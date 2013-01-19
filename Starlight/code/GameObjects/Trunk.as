@@ -7,17 +7,17 @@ package code.GameObjects
 	 * ...
 	 * @author ...
 	 */
-	public class Armoire extends GameObject 
+	public class Trunk extends GameObject 
 	{
 		
-		public function Armoire() 
+		public function Trunk() 
 		{
 			
 		}
 		
 		public override function init()	{
 			
-			manager.initObject(this, "armoire");
+			manager.initObject(this, "trunk");
 			makeButton();
 			
 			addEventListener(MouseEvent.CLICK, onClick);
