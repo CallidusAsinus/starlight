@@ -49,6 +49,16 @@ package code	{
 			return null;
 		}
 		
+		public function block()	{
+			
+			getObject("blocker").playAnimation("up");
+		}
+		
+		public function unblock()	{
+			
+			getObject("blocker").playAnimation("down");
+		}
+		
 		//	Get the singleton instance of this class
 		public static function getInstance():GameObjectManager	{
 			if(!instance)	{

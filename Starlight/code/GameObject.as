@@ -15,6 +15,7 @@ package code	{
 		public function GameObject()	{
 			
 			super();
+			this.stop();
 			manager = GameObjectManager.getInstance();
 		}
 		
@@ -35,9 +36,14 @@ package code	{
 		}
 		
 		//	Functionality functions
-		protected function makeButton()	{
+		public function makeButton()	{
 			
 			this.buttonMode = true;
+		}
+		
+		public function unmakeButton()	{
+			
+			this.buttonMode = false;
 		}
 		
 		//	Animation functions
@@ -59,6 +65,11 @@ package code	{
 		public function setZ(index)	{
 			
 			
+		}
+		
+		public function setState(newState:String)	{
+			
+			state = newState;
 		}
 	}
 
