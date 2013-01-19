@@ -19,7 +19,7 @@ package code
 			manager.initObject(this, "gui");
 		}
 
-		public function addObject(obj:GUIObject)	{
+		public function addObject(obj:GameObject)	{
 			
 			var xBuffer:int = 3;
 			var yBuffer:int = 3;
