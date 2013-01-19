@@ -35,8 +35,11 @@ package code	{
 		
 		public function initObject(obj:GameObject, name:String)	{
 			
-			objects[name] = obj;
-			trace("manager initialized " + name + " as " + objects[name]);
+			if (!objects[name])	{
+				
+				objects[name] = obj;
+				trace("manager initialized " + name + " as " + objects[name]);
+			}
 		}
 		
 		public function getObject(name:String):GameObject	{

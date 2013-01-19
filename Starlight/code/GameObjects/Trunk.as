@@ -28,7 +28,7 @@ package code.GameObjects
 			if(state == "start")	{
 				
 				playAnimation("open");
-				state = "open";
+				//state = "open";
 			}
 			
 		}

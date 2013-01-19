@@ -31,6 +31,12 @@ package code.GameObjects
 				state = "open";
 			}
 			
+			else if (state == "open")	{
+				
+				playAnimation("closed");
+				state = "start";
+			}
+			
 		}
 		
 	}

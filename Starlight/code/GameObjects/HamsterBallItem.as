@@ -6,10 +6,10 @@ package code.GameObjects
 	 * ...
 	 * @author ...
 	 */
-	public class BubblesItem extends GUIObject
+	public class HamsterBallItem extends GUIObject
 	{
 		
-		public function BubblesItem() 
+		public function HamsterBallItem() 
 		{
 			
 		}

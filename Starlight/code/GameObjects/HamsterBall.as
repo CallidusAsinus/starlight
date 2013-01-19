@@ -2,24 +2,27 @@ package code.GameObjects
 {
 	import code.GameObject;
 	import flash.events.MouseEvent;
+	import code.GUI;
 	
 	/**
 	 * ...
 	 * @author ...
 	 */
-	public class Bubbles extends GameObject 
+	public class HamsterBall extends GameObject
 	{
 		
-		public function Bubbles() 
+		public function HamsterBall() 
 		{
 			
 		}
 		
 		public override function init()	{
 			
-			if (manager.getObject("bubbles") == null)	{
+			gui = GUI.getInstance();
+			
+			if (manager.getObject("hamsterBall") == null)	{
 				
-				manager.initObject(this, "bubbles");
+				manager.initObject(this, "hamsterBall");
 				makeButton();
 				
 				addEventListener(MouseEvent.CLICK, onClick);
@@ -42,7 +45,7 @@ package code.GameObjects
 		
 		private function addToInventory()	{
 			
-			gui.addObject(new BubblesItem());
+			gui.addObject(new HamsterBallItem());
 			hide();
 			state = "inventory";
 		}
